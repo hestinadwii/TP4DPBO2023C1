@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2023 at 05:04 PM
+-- Generation Time: Jun 01, 2023 at 05:21 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,8 +40,8 @@ INSERT INTO `divisi` (`id_divisi`, `nama_divisi`) VALUES
 (1, 'Marketing '),
 (7, 'Keuangan'),
 (8, 'Human Resources'),
-(9, 'Operasional'),
-(17, 'Produk');
+(9, 'Operasional dan Produk'),
+(19, 'Informasi Teknologi');
 
 -- --------------------------------------------------------
 
@@ -67,7 +67,7 @@ INSERT INTO `karyawan` (`id`, `name`, `email`, `phone`, `jabatan`, `id_divisi`) 
 (4, 'Jeon Jungkook', 'jeon_jungkook@gmail.com', '089786', 'Chief Financial Officer', 7),
 (5, 'Kim Jennie', 'jennieee@gmail.com', '085673', 'Quality Manager', 9),
 (6, 'Shin Ryujin', 'shin.ryujin123@gmail.com', '088711', 'Financial Analyst', 7),
-(10, 'Choi Yeonjun', 'yawnzzn123@gmail.com', '087456', 'Chief Human Resources Manager', 8);
+(10, 'Choi Yeonjun', 'yawnzzn123@gmail.com', '087456', 'HR Manager', 8);
 
 --
 -- Indexes for dumped tables
@@ -94,13 +94,13 @@ ALTER TABLE `karyawan`
 -- AUTO_INCREMENT for table `divisi`
 --
 ALTER TABLE `divisi`
-  MODIFY `id_divisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_divisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `karyawan`
 --
 ALTER TABLE `karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
